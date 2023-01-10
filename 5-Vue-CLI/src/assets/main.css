@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    padding: 10px;
+}
+.counterBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    gap: 8px;
+    padding: 10px;
+    background: bisque;
+    width:80px;
+
+}
+.counterBox .actions{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+
+}
+.counterBox .actions button{
+    flex:1;
+}

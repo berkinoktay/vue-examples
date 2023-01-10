@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Instance</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{title}}</h1>
+      <p>{{description}}</p>
+      <a :href="link.url" :target="link.target">{{link.text}}</a>
+      <br /><br />
+      <button @click="changeTitle('Button 1 tarafından değiştirilmiştir.')">
+        Button 1 - Başlığı Değiştir
+      </button>
+      <button @click="changeTitle('Button 2 tarafından değiştirilmiştir.')">
+        Button 2 - Başlığı Değiştir
+      </button>
+      <br />
+      <div
+        style="
+          width: 200px;
+          height: 200px;
+          border: 2px dashed burlywood;
+          background-color: beige;
+          margin-top: 20px;
+        "
+        @mousemove="updateCoordinates('Koordinatlar', $event)"
+      ></div>
+      <br />
+      <div>
+        <span>X:{{coords.x}} </span>
+        <span>Y:{{coords.y}}</span>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

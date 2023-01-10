@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <div style="display: flex; gap:20px;">
+            <div style="display: flex;flex-direction: column; align-items: center;background-color: beige;">
+                <p>{{counter1}}</p>
+                <button @click="counter1++">Arttır</button>
+                <button @click="counter1--">Azalt</button>
+                <div
+                    style="display: flex; padding: 10px; align-items: center; justify-content: center; background-color: bisque; margin-top: 10px;">
+                    {{getCounter1Result}}</div>
+            </div>
+            <div style="display: flex;flex-direction: column; align-items: center; background-color: beige;">
+                <p>{{counter2}}</p>
+                <button @click="counter2++">Arttır</button>
+                <button @click="counter2--">Azalt</button>
+                <div
+                    style="display: flex; padding: 10px; align-items: center; justify-content: center; background-color: bisque; margin-top: 10px;">
+                    {{getCounter2Result}}</div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
