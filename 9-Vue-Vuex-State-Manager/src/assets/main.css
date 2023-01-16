@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .row{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.todosBox {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+border: 1px solid #ccc;
+    border-radius: 4px;
+    gap: 4px;
+}
+.todosBox .addTodo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.todosBox .addTodo input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.todosBox .addTodo button{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #ccc;
+    cursor: pointer;
+}
+.todosBox .todos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style-type: none;
+
+}
+.todosBox .todos li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.todosBox .showButtons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 8px;
+}
+.todosBox .showButtons button{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #ccc;
+    cursor: pointer;
+}
