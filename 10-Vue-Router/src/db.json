@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "adSoyad": "berkin",
+      "yas": "22",
+      "dogumYeri": "wedw",
+      "id": 1
+    },
+    {
+      "adSoyad": "Mehmet Can",
+      "yas": "44",
+      "dogumYeri": "Yalova",
+      "id": 3
+    },
+    {
+      "adSoyad": "Ayşe Teker",
+      "yas": "33",
+      "dogumYeri": "Ankara",
+      "id": 4
+    }
+  ]
+}
